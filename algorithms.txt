@@ -1,0 +1,48 @@
+Sorting Algorithms
+
+Merge Sort: A divide-and-conquer algorithm that splits the array into smaller subarrays, sorts them, and then merges them back together. Time complexity: O(n log n).
+
+Quick Sort: Another divide-and-conquer algorithm that selects a "pivot" and partitions the array into elements less than or greater than the pivot. Time complexity: O(n log n) on average, O(n²) worst case (with poor pivot choices).
+
+Heap Sort: Uses a binary heap data structure to sort an array. Time complexity: O(n log n).
+
+
+Search Algorithms
+
+Binary Search: The one you just learned! Efficiently finds a target in a sorted array. Time complexity: O(log n).
+
+Breadth-First Search (BFS): A graph traversal algorithm that explores all nodes level by level, often used for shortest-path problems on unweighted graphs. Time complexity: O(V + E), where V is the number of vertices and E is the number of edges.
+
+Depth-First Search (DFS): Another graph traversal algorithm that explores as far as possible along each branch before backtracking. Time complexity: O(V + E).
+
+
+Dynamic Programming Algorithms
+
+Fibonacci Sequence: A classical problem where you can use either recursion or dynamic programming (DP) to calculate Fibonacci numbers. DP optimizes the recursive approach by storing results to avoid repeated calculations. Time complexity: O(n).
+Longest Common Subsequence (LCS): Given two sequences, this algorithm finds the length of their longest common subsequence. It’s solved using dynamic programming. Time complexity: O(m * n), where m and n are the lengths of the sequences.
+Knapsack Problem: A famous DP problem where you need to maximize the value you can carry in a knapsack with a weight limit. Time complexity: O(n * W), where n is the number of items and W is the knapsack capacity.
+
+Greedy Algorithms
+Dijkstra’s Algorithm: Finds the shortest paths from a source node to all other nodes in a weighted graph with non-negative edges. Time complexity: O((V + E) log V).
+
+Kruskal’s Algorithm: A minimum spanning tree (MST) algorithm for graphs, choosing the smallest edges and avoiding cycles. Time complexity: O(E log E).
+
+Prim’s Algorithm: Another MST algorithm that builds the tree by adding the smallest edge that connects a new vertex. Time complexity: O(E log V).
+
+
+Backtracking Algorithms
+N-Queens Problem: Place N queens on an N×N chessboard so that no two queens threaten each other. This problem uses backtracking to find solutions.
+Sudoku Solver: Given a partially filled 9×9 grid, fill it so that each column, row, and subgrid contains digits 1 through 9 exactly once.
+Permutation Generator: Generate all permutations of a set of numbers or characters. Time complexity: O(n!).
+
+
+Tree and Graph Algorithms
+Inorder, Preorder, Postorder Traversals: These are ways of traversing binary trees. Time complexity: O(n), where n is the number of nodes.
+Topological Sorting: Used in directed acyclic graphs (DAGs) to find an order of nodes that respect dependencies. Time complexity: O(V + E).
+Union-Find (Disjoint Set): A data structure to keep track of elements that are partitioned into disjoint sets. It supports union and find operations. Often used in Kruskal's algorithm for finding minimum spanning trees. Time complexity: O(α(n)), where α(n) is the inverse Ackermann function.
+
+
+String Matching Algorithms
+
+Knuth-Morris-Pratt (KMP): An efficient string-searching algorithm that preprocesses the pattern to avoid redundant comparisons. Time complexity: O(m + n), where m is the pattern length and n is the text length.
+Rabin-Karp Algorithm: Uses hashing to find any one of a set of pattern strings in a text. Time complexity: O(m + n) on average, O(mn) worst case.
