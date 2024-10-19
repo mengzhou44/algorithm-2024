@@ -46,3 +46,78 @@ String Matching Algorithms
 
 Knuth-Morris-Pratt (KMP): An efficient string-searching algorithm that preprocesses the pattern to avoid redundant comparisons. Time complexity: O(m + n), where m is the pattern length and n is the text length.
 Rabin-Karp Algorithm: Uses hashing to find any one of a set of pattern strings in a text. Time complexity: O(m + n) on average, O(mn) worst case.
+
+
+**********************************************************
+1. Array and String Problems
+Two Sum: Find two numbers in an array that sum to a target value.
+Longest Substring Without Repeating Characters: Given a string, find the length of the longest substring without repeating characters.
+Maximum Subarray (Kadane's Algorithm): Find the contiguous subarray with the largest sum.
+Rotate Array: Rotate an array to the right by a given number of steps.
+Trapping Rain Water: Calculate how much water can be trapped after raining given an elevation map.
+
+
+2. Sorting and Searching
+Binary Search: Search for a target value in a sorted array.
+Merge Intervals: Given a collection of intervals, merge overlapping ones.
+Kth Largest Element in an Array: Find the Kth largest element in an unsorted array.
+Search in Rotated Sorted Array: Search for a target value in a rotated sorted array.
+
+
+3. Linked List Problems
+Reverse a Linked List: Reverse the nodes in a linked list.
+Detect Cycle in a Linked List (Floyd's Cycle Detection): Determine if a linked list has a cycle.
+Merge Two Sorted Lists: Merge two sorted linked lists into one sorted list.
+Remove Nth Node from End: Remove the Nth node from the end of a linked list.
+
+4. Tree and Graph Problems
+Binary Tree Inorder Traversal: Perform an inorder traversal of a binary tree.
+Lowest Common Ancestor of a Binary Tree: Find the lowest common ancestor (LCA) of two given nodes in a binary tree.
+Level Order Traversal (Breadth-First Search): Traverse a tree level by level.
+Depth-First Search (DFS): Explore nodes of a graph/tree by diving deep into each branch.
+Graph Cycle Detection: Detect cycles in an undirected or directed graph.
+
+5. Dynamic Programming
+Climbing Stairs: Find how many distinct ways there are to climb a staircase of n steps, where you can take 1 or 2 steps at a time.
+Longest Increasing Subsequence: Find the length of the longest increasing subsequence in an array.
+Knapsack Problem: Given weights and values, determine the maximum value you can obtain by filling a knapsack of a certain capacity.
+Coin Change Problem: Find the fewest number of coins needed to make a certain amount.
+
+
+6. Recursion and Backtracking
+N-Queens Problem: Place N queens on an N×N chessboard such that no two queens threaten each other.
+Permutations: Generate all permutations of a list or string.
+Combinations: Generate all combinations of a list or array.
+Word Search: Search for a word in a 2D grid of characters.
+
+7. Math and Number Theory
+Fibonacci Sequence: Generate the nth Fibonacci number.
+Prime Numbers: Find all prime numbers up to a given number (Sieve of Eratosthenes).
+Greatest Common Divisor (GCD): Find the GCD of two numbers (Euclidean algorithm).
+Palindrome Number: Determine if a number is a palindrome.
+
+8. Bit Manipulation
+Single Number: In an array where every element appears twice except for one, find that single number.
+Counting Bits: Count the number of 1s in the binary representation of a number.
+Power of Two: Determine if a number is a power of two.
+
+9. Stacks and Queues
+Valid Parentheses: Determine if a string of parentheses is valid.
+Min Stack: Design a stack that supports push, pop, and retrieving the minimum element in constant time.
+Sliding Window Maximum: Given an array, find the maximum for each sliding window of size k.
+
+10. Greedy Algorithms
+Interval Scheduling Maximization: Find the maximum number of non-overlapping intervals.
+Jump Game: Determine if you can reach the last index of an array, starting at the first index.
+Meeting Rooms: Given meeting time intervals, determine if a person could attend all meetings.
+
+11. Hashing and Hash Maps
+Group Anagrams: Group strings that are anagrams of each other.
+Top K Frequent Elements: Find the K most frequent elements in an array.
+Longest Consecutive Sequence: Find the length of the longest consecutive elements sequence in an array.
+
+12. Miscellaneous
+LRU Cache: Design and implement a Least Recently Used (LRU) cache.
+Median of Two Sorted Arrays: Find the median of two sorted arrays of different sizes.
+Merge k Sorted Lists: Merge k sorted linked lists into one sorted linked list.
+These problems cover a range of common data structures and algorithmic techniques

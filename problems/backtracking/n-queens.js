@@ -36,7 +36,7 @@ function solveNQueens(n) {
              if (isSafe(row, col)) {
                  board[row][col] = 'Q'
                  placeQueens(row+1)
-                board[row][col] = '.'
+                 board[row][col] = '.'
              }
          }
      }

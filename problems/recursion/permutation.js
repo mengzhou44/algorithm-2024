@@ -14,6 +14,28 @@ function  permutate(str){
      return result 
 }
 
+ // dfs 
+function permute(str) {
+    let result = []
+    function dfs(cur, used) {
+      if (cur.length === str.length) {
+        result.push(cur)
+        return
+      }
+      
+      for (let ch of str) {
+        if(!used[ch]) {
+          used[ch] = true
+          dfs(cur + ch, used)
+          used[ch] = false
+        }
+       
+      }
+    }
+    const used = new Array(str.length).fill(false)
+    dfs('', used)
+    return result
+  }
  
 
 console.log(permutate('abc'))

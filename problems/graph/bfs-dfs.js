@@ -1,10 +1,3 @@
-class LinkNode {
-  constructor(val) {
-    this.val = val
-    this.prev = null
-  }
-}
-
 class Graph {
   constructor() {
     this.adjacentList = {}
@@ -19,43 +12,48 @@ class Graph {
     this.adjacentList[vertex2].push(vertex1)
   }
 
-  getShortestPath(from, to) {
-    let queue = [new LinkNode(from)]
+  bfs(start) {
+    let queue = [start]
 
     const visited = {}
-    visited[from] = true
+    visited[start] = true
 
+    const result = []
     while (queue.length > 0) {
-      const node = queue.shift()
-    
-      const neighbours = this.adjacentList[node.val]
+      const vertex = queue.shift()
+      result.push(vertex)
+      const neighbours = this.adjacentList[vertex]
 
       for (let nei of neighbours) {
         if (!visited[nei]) {
           visited[nei] = true
-          let temp = new LinkNode(nei)
-          temp.prev = node
-
-          if (nei === to) {
-            this.printPath(temp)
-            return
-          }
-          queue.push(temp)
+          queue.push(nei)
         }
       }
     }
-
-    console.log('No path found!')
+    return result
   }
 
-  printPath(temp) {
-    let result = [temp.val]
-    let parent = temp.prev
-    while (parent !== null) {
-      result.unshift(parent.val)
-      parent = parent.prev
+  dfs(start) {
+    let stack = [start]
+
+    const visited = {}
+    visited[start] = true
+
+    const result = []
+    while (stack.length > 0) {
+      const vertex = stack.pop()
+      result.push(vertex)
+      const neighbours = this.adjacentList[vertex]
+
+      for (let nei of neighbours) {
+        if (!visited[nei]) {
+          visited[nei] = true
+          stack.push(nei)
+        }
+      }
     }
-    console.log(result.join('->'))
+    return result
   }
 }
 
@@ -75,4 +73,6 @@ graph.addEdge('D', 'E')
 graph.addEdge('D', 'F')
 graph.addEdge('E', 'F')
 
-graph.getShortestPath('A', 'E')
+// console.log(graph.bfs('A'));
+
+console.log(graph.dfs('A'))
